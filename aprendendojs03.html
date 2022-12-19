@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo js</title>
+    <script type="text/javascript">
+        var b1 = window.prompt('Digite a primeira nota: ');
+        var b2 = window.prompt('Digite a segunda nota : ');
+        var b3 = window.prompt('Digite a terceira nota : ');
+        var b4 = window.prompt('Digite a quarta nota :');
+        var result = (parseFloat(b1) + parseFloat(b2) + parseFloat(b3) + parseFloat(b4)) / 4;
+        if (result >= 7) {
+            alert("Sua média foi :" + result + "\nAluno aprovado!!");
+        } else if (result < 7 && result >= 5) {
+            alert("Sua média foi :" + result + "\nAluno em recuperação!!");
+        } else {
+            alert("Sua média foi :" + result + "\nAluno reprovado");
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Aprendendo if/else e operadores lógicos em js</h1>
+
+</body>
+
+</html>

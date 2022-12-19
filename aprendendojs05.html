@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo js</title>
+    <script type="text/javascript">
+        //onkeypress -> quando pressionado
+        //value pega o valor que está dentro do elemento
+        function mask_date() {
+            var n_char = document.getElementById("txtNascimento").value.length;
+            if (n_char == 2) {
+                document.getElementById("txtNascimento").value = document.getElementById("txtNascimento").value + "/";
+            } else if (n_char == 5) {
+                document.getElementById("txtNascimento").value = document.getElementById("txtNascimento").value + "/";
+
+            }
+
+        }
+
+        function mask_cep() {
+            var n_char = document.getElementById("txtCep").value.length;
+            if (n_char == 5) {
+                document.getElementById("txtCep").value = document.getElementById("txtCep").value + "-";
+            }
+
+        }
+
+        function mask_fone() {
+            var n_char = document.getElementById("txtFone").value.length;
+            if (n_char == 2) {
+
+                document.getElementById("txtFone").value = "(" + document.getElementById("txtFone").value + ") ";
+            } else if (n_char == 10) {
+                document.getElementById("txtFone").value = document.getElementById("txtFone").value + "-";
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h3>Cadastro</h3>
+    Nome : <input type="text" />
+    <br></br>
+    Data de nascimento: <input type="text" id="txtNascimento" maxlength="10" onkeyup="mask_date();" />
+    <br></br>
+    CEP: <input type="text" maxlength="9" id="txtCep" onkeyup="mask_cep();" />
+    <br></br>
+    Telefone: <input type="text" maxlength="15" id="txtFone" onkeyup="mask_fone();" />
+    <input type="button" value="cadastrar">
+
+</body>
+
+</html>
