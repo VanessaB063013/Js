@@ -39,20 +39,25 @@
 
         }
 
+        function mensagem(){
+            alert('Cadastro realizado com sucesso!!')
+        }
+
     </script>
 
 </head>
 
 <body>
     <h3>Cadastro</h3>
-    Nome : <input type="text" />
+    Nome : <input type="text" id="txtNome" />
     <br></br>
     Data de nascimento: <input type="text" id="txtNascimento" maxlength="10" onkeyup="mask_date();" />
     <br></br>
     CEP: <input type="text" maxlength="9" id="txtCep" onkeyup="mask_cep();" />
     <br></br>
     Telefone: <input type="text" maxlength="15" id="txtFone" onkeyup="mask_fone();" />
-    <input type="button" value="cadastrar">
+    <input type="button" value="cadastrar" onclick="mensagem();">
+
 
 </body>
 
