@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script type="text/javascript" src="aprendendojs06.js"></script>
+    
+    <script type="text/javascript">
+        /*sintaxe for:
+            for(var i=0 ; i<10; i++){
+            }
+          sintaxe while:
+          var sorte = 30;
+          var numero = 0;
+          while(var sorte !=30){
+                numero = window.prompt("Digite o número da sorte: ");            
+          }  
+
+        */
+    </script>
+
+
+</head>
+
+<body>
+    <h3>Cadastro</h3>
+    Nome : <input type="text" id="txtNome" />
+    <br></br>
+    Data de nascimento: <input type="text" id="txtNascimento" maxlength="10" onkeyup="mask_date();" />
+    <br></br>
+    CEP: <input type="text" maxlength="9" id="txtCep" onkeyup="mask_cep();" />
+    <br></br>
+    Telefone: <input type="text" maxlength="15" id="txtFone" onkeyup="mask_fone();" />
+    <input type="button" value="cadastrar" onclick="mensagem();">
+
+
+</body>
+
+</html>
